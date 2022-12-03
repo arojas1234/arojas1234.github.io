@@ -77,6 +77,9 @@ border-bottom: .25em solid #444;
     
     /*margin-top: 0px;*/
     gap: 50px;
+    padding: 0px 0px 25px 0px;
+   /* border-bottom: 5px solid;
+    border-color: lightblue; */
 
 }
 
@@ -90,18 +93,54 @@ h1 {
 .flex-proj{
     display: grid;
     grid-auto-flow: column;
+    padding: 25px 0px 0px 0px;
+    margin-bottom: 0px;
+    border-top: 5px solid;
+    border-color: lightblue;
+    
 }
 
 .mini-div{
     display: inline;
+  /*  border-style: solid;
+    border-width: 5px;
+    border-color: lightblue; */
 }
 .ipod-pic{
-    width: 50%;
-    height: 75%;
-    margin-left: 20%;
+    padding-top: 2%;
+    width: 65%;
+    height: 85%;
+    margin-right: 20%;
+}
+.mini-title{
+    font-size: 45px;
+    text-align: center;
+    margin: 0px 0px 0px 0px;
 }
 
-.ht{
-    width: 40%;
+.heuristic-pic{
+    width: 95%;
+    height: 95%;
+    padding-left: 10%;
+}
+
+.mini-text{
+    padding-left: 100px;
+    list-style: circle;
+    font-size: 29px;
+}
+
+.cir{
+    list-style: circle;
+}
+
+.html-css-js-pic{
+    padding-left: 350px;
+    width: 30%;
+    height: 30%
+}
+.heuristic-icon-pic{
+    width: 45%;
     height: 40%;
+    padding-left: 250px;
 }
