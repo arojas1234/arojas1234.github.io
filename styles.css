@@ -25,12 +25,17 @@ nav li{
     font-weight: bold;
     margin: 5px;
     user-select: none;
+
 }
 nav ul{
     list-style: none;
     margin-right: 10px;
 }
 
+nav a{
+    text-decoration: none;
+    color: inherit;
+}
 /*nav .pulldown-menu{
     display: none;
     position: absolute;
@@ -97,6 +102,7 @@ h1 {
     margin-bottom: 0px;
     border-top: 5px solid;
     border-color: lightblue;
+    gap: 50px;
     
 }
 
@@ -122,6 +128,7 @@ h1 {
     width: 95%;
     height: 95%;
     padding-left: 10%;
+    padding-right: 10%;
 }
 
 .mini-text{
@@ -143,4 +150,12 @@ h1 {
     width: 45%;
     height: 40%;
     padding-left: 250px;
+}
+
+iframe{
+    margin-left: 23%;
+    aspect-ratio: 1.4142 / 1;
+    max-width: 55%;
+    height: auto;
+  
 }
