@@ -16,16 +16,30 @@
         </nav>
         </nav>
         <main>
-            <h1>
+            <h1 aria-label="Bio Page"> 
                 About Me
             </h1>
-            <p>
-                I was born in Quito, the capital of Ecuador <br>
-                However, I have lived most of my life in Miami, FL <br>
-                My hobbies include playing video games (specfically rhythm games), eating, sleeping, and fostering kittens <br>
-                
-
-            </p>
+            <div class="about-flex">
+                <ul class="about-text" aria-label="About Me Summary">
+                    <li>I was born in Quito, the capital of Ecuador.
+                    However, I have lived most of my life in Miami, FL. </li>
+                    <li> My hobbies include playing video games, watching anime,. and fostering kittens. </li>
+                    <li> I am the external president of the NU Esports Club, as well as the financial chair
+                        for the NU SHPE chapter. </li>
+                    <li>I have a dog named Lucky and a cat named Chloe, here are some cute pics!</li>  
+                </ul>
+                <img class="lightning-pic" 
+                    src="images/me-lightning.jpeg"
+                    alt="Andres with Lightning McQueen Car">
+            </div>
+            <div class="about-float">
+                <img class="chloe-pic" 
+                    src="images/chloe.jpeg"
+                    alt="My cat Chloe!">
+                <img class="lucky-pic" 
+                    src="images/lucky.jpeg"
+                    alt="My dog Lucky!">
+            </div>
         </main>
     </body>
 </html>

@@ -1,3 +1,12 @@
+main{
+    margin-top: 100px; 
+}
+
+html{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 nav{
     background-color: lightblue;
     position: fixed;
@@ -8,16 +17,6 @@ nav{
     box-shadow: 0px 4px 4px blue;
     font-size: 20px;
 }
-
-main{
-    margin-top: 100px; 
-}
-
-/*nav [aria-current=page]{
-    background-color: #bbb;
-    color:#000;
-    border-bottom: .25cm solid;
-}*/
 
 nav li{
     display: inline-block;
@@ -36,35 +35,14 @@ nav a{
     text-decoration: none;
     color: inherit;
 }
-/*nav .pulldown-menu{
-    display: none;
-    position: absolute;
-    border: 1px solid white;
-    background-color: white;
-}
-
-nav li:hover .pulldown-menu{
-    display: block;
-}*/
 
 nav li:hover{
     text-decoration: underline;
 }
-/*nav.top-nav .pulldown-menu li{
-    display: block;
-}
-/*color:#000;
-border-bottom: .25em solid #444;
-}*/
 
 .landing-p{
     font-size: 30px;
     text-align: center;
-   
-   /* border-color: black;
-    border-radius: 2px;
-    border-style: solid; */
-
 }
 
 .half{
@@ -76,16 +54,10 @@ border-bottom: .25em solid #444;
 }
 .flex-landing {
     display: flex;
-    
     margin-left: 50px;
     margin-right: 50px;
-    
-    /*margin-top: 0px;*/
     gap: 50px;
     padding: 0px 0px 25px 0px;
-   /* border-bottom: 5px solid;
-    border-color: lightblue; */
-
 }
 
 h1 {
@@ -108,10 +80,8 @@ h1 {
 
 .mini-div{
     display: inline;
-  /*  border-style: solid;
-    border-width: 5px;
-    border-color: lightblue; */
 }
+
 .ipod-pic{
     padding-top: 2%;
     width: 65%;
@@ -133,12 +103,7 @@ h1 {
 
 .mini-text{
     padding-left: 100px;
-    list-style: circle;
     font-size: 29px;
-}
-
-.cir{
-    list-style: circle;
 }
 
 .html-css-js-pic{
@@ -152,10 +117,73 @@ h1 {
     padding-left: 250px;
 }
 
-iframe{
+.iframe{
     margin-left: 23%;
     aspect-ratio: 1.4142 / 1;
-    max-width: 55%;
+    width: 55%;
     height: auto;
-  
 }
+
+.resume-link{
+    text-align: center;
+}
+
+.about-flex{
+    display: flex;
+}
+
+.about-float{
+    float: left;
+}
+
+.about-text{
+    padding-left: 100px;
+    font-size: 29px;
+}
+
+.lightning-pic{
+    width: 40%;
+    height: 35%;
+
+    border-radius: 50%;
+}
+
+
+.chloe-pic{
+    width: 25%;
+    height: 25%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
+
+.lucky-pic{
+    width: 35%;
+    height: 25%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    margin-bottom: 5%;
+}
+
+.contact-text{
+    padding-left: 100px;
+    font-size: 32px;
+    padding-right: 50px;
+}
+
+.contact-pics{
+    width: 15%;
+    padding-right: 2%;
+
+}
+
+.contact-flex{
+    display: flex;
+    padding-top: 3%;
+}
+
+
+  /*  border-style: solid;
+    border-width: 5px;
+    border-color: lightblue; */
