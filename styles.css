@@ -1,189 +1,76 @@
+body {
+    margin: 0px;
+}
+
 main{
-    margin-top: 100px; 
-}
-
-html{
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
-nav{
-    background-color: lightblue;
-    position: fixed;
-    top: 0px;
-    right: 0px;
-    left: 0px;
-    text-align: right;
-    box-shadow: 0px 4px 4px blue;
-    font-size: 20px;
-}
-
-nav li{
-    display: inline-block;
-    font-family: sans-serif;
-    font-weight: bold;
-    margin: 5px;
-    user-select: none;
-
-}
-nav ul{
-    list-style: none;
-    margin-right: 10px;
-}
-
-nav a{
-    text-decoration: none;
-    color: inherit;
-}
-
-nav li:hover{
-    text-decoration: underline;
-}
-
-.landing-p{
-    font-size: 30px;
     text-align: center;
 }
-
-.half{
-    width: 50%;
+.info {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
 
-.about-img{
-    border-radius:50% ;
-}
-.flex-landing {
+.contact-info{
     display: flex;
-    margin-left: 50px;
-    margin-right: 50px;
-    gap: 50px;
-    padding: 0px 0px 25px 0px;
+    align-items: center;
+    justify-content: center;
+}
+.contacts{
+    width: 33%;
 }
 
-h1 {
-    font-size: 60px;
-    text-align: center;
-    margin-bottom: 10px;
-    border-width: 2px;
-}
-
-.flex-proj{
-    display: grid;
-    grid-auto-flow: column;
-    padding: 25px 0px 0px 0px;
-    margin-bottom: 0px;
-    border-top: 5px solid;
-    border-color: lightblue;
-    gap: 50px;
-    
-}
-
-.mini-div{
-    display: inline;
-}
-
-.ipod-pic{
-    padding-top: 2%;
-    width: 65%;
-    height: 85%;
-    margin-right: 20%;
-}
-.mini-title{
-    font-size: 45px;
-    text-align: center;
-    margin: 0px 0px 0px 0px;
-}
-
-.heuristic-pic{
-    width: 95%;
-    height: 95%;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-.mini-text{
-    padding-left: 100px;
-    font-size: 29px;
-}
-
-.html-css-js-pic{
-    padding-left: 350px;
-    width: 30%;
-    height: 30%
-}
-.heuristic-icon-pic{
-    width: 45%;
-    height: 40%;
-    padding-left: 250px;
-}
-
-.iframe{
-    margin-left: 23%;
-    aspect-ratio: 1.4142 / 1;
-    width: 55%;
-    height: auto;
-}
-
-.resume-link{
-    text-align: center;
-}
-
-.about-flex{
+.nav-bar {
+    width: 100%;
+    background-color: #4E2A84;
+    color: white;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.about-float{
-    float: left;
+.nav-button {
+    text-decoration: none; 
+    color: black;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
-.about-text{
-    padding-left: 100px;
-    font-size: 29px;
+.nav-button:hover {
+    background-color: #777;
 }
 
-.lightning-pic{
-    width: 40%;
-    height: 35%;
-
-    border-radius: 50%;
+.nav-buttons{
+    padding-right: 10px;
 }
 
-
-.chloe-pic{
-    width: 25%;
-    height: 25%;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 5%;
+.logo{
+    padding-left: 25px;
 }
 
-.lucky-pic{
-    width: 35%;
-    height: 25%;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 5%;
-    margin-bottom: 5%;
+.logo-pics {
+    max-width: 60px;
+    max-height: 60px;
 }
 
-.contact-text{
-    padding-left: 100px;
-    font-size: 32px;
-    padding-right: 50px;
+.esports-logo{
+    max-width: 200px;
+    max-height: 200px;
 }
 
-.contact-pics{
-    width: 15%;
-    padding-right: 2%;
-
+.esports-header{
+    font-family: 'Campton', sans-serif;
 }
 
-.contact-flex{
-    display: flex;
-    padding-top: 3%;
+.nav-logo{
+    max-width: 50px;
+    max-height: 50px;
 }
 
-
-  /*  border-style: solid;
-    border-width: 5px;
-    border-color: lightblue; */
+.front-pic{
+    max-width: 500px;
+    max-height: 200px;
+}
