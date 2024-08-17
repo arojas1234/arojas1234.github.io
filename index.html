@@ -1,53 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
-<!-- Looked at Stack Overflow, Chatgpt, and Prof's code for basic questions 
- (i.e. switching objects in div from vertical to horizontal layouts, hover over button, alignment) -->
-<head>
-    <meta charset="UTF-8">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.cdnfonts.com/css/campton" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <script src="libraries/p5.min.js"></script>
-    <script src="libraries/p5.sound.min.js"></script>
-
-
-</head>
-<body>
-    <div class="container-fluid">
-    <header>
-        <nav class="nav-bar">
-            <div class="logo">
-                <img src="esports.png" class="nav-logo" alt="Northwestern Logo">
-            </div>
-            <div class="nav-buttons">
-                <a href="index.html" class="nav-button">Home</a>
-                <a href="teams.html" class="nav-button">Teams</a>
-                <a href="about.html" class="nav-button">About Us</a>
-                <a href="contact.html" class="nav-button">Contact Us</a>
-            </div>
+<html lang="en" dir="ltr">
+    <head>
+        <title>Home Page</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <nav role=navigation>
+            <ul>
+                <li tabindex=1><a href="index.html">Home</a></li>
+                <li tabindex=2><a href="about-me.html">About Me</a></li>
+                <li tabindex=3><a href="resume.html">Resume</a></li>
+                <li tabindex=4><a href="contact.html">Contact Info</a></li>
+            </ul>
         </nav>
-    </header>
-    
-    <main>
-        <h1 class="esports-header">Northwestern Esports</h1>
-        <img src="esports.png" class="esports-logo" alt="Northwestern Logo">
-        <p>
-            Northwestern's home for all competitive and casual video gaming!
-        </p>
-        <div>
-            <a href="mailto:northwesternesports@u.northwestern.edu"><img src="email.jpg" class="logo-pics" alt="Email"></a>
-            <a href="https://discord.gg/nuesports"><img src="discord.jpg" class="logo-pics" alt="Discord"></a>
-            <a href="https://x.com/nuesports"><img src="twitter.jpg" class="logo-pics" alt="Twitter"></a>
-            <a href="https://www.instagram.com/northwesternesports/"><img src="instagram.png" class="logo-pics" alt="Instagram"></a>
-            <a href="https://fb.com"><img src="facebook.png" class="logo-pics" alt="Facebook"></a>
-            <a href="https://northwestern.campuslabs.com/engage/organization/esports"><img src="wc.png" class="logo-pics" alt="Wildcat Connection"></a>
-        </div>
-        <img src="smash.jpg" class="front-pic" alt="Club Photo">
-        <script src="sketch.js"></script>
-    </main>
-    </div>
-</body>
+        <main>
+            <h1 aria-label="Home Page">
+                Welcome!
+            </h1>
+            <div class="flex-landing">
+                <img src="images/me.jpeg"
+                     alt="Andres Rojas Picture">
+                <p class="landing-p" role="Welcome Statement">
+                    <br>
+                    Hey there! My name is Andres Rojas, a current junior at Northwestern University! I am a computer
+                    science major from Miami, FL with a passion for tech and video games!
+                    <br><br><br><br>
+                    Feel free to look around my page, you can check out some of my projects right below!
+                </p>  
+            </div>
+
+            <div class="flex-proj">
+                <div class="mini-div">
+                    <h2 class="mini-title" aria-label="Project #1 Title">
+                        iPod Music Player
+                    </h2>
+                    <ul class="mini-text" aria-label="Project #1 Summary">
+                        <li>Project done for CS 330 (Human Computer Interaction)</li>
+                        <li>Utilized HTML, CSS, and Javascript to recreate an iPod music player</li>
+                        <li>Can enter albums and select songs to play</li>
+                        <li>Work in progress!</li>
+                        <li><a href="https://github.com/arojas1234/ipod-music-player">Github Repo</a></li>
+                    </ul>
+                    <img class="html-css-js-pic" 
+                     src="images/html-css-js.png"
+                     alt="HTML/CSS/Javascript Icons">
+                </div>
+                <img class="ipod-pic" 
+                     src="images/music-player.png"
+                     alt="Music Player Project">
+            </div>
+
+            <div class="flex-proj">
+                <img class="heuristic-pic" 
+                     src="images/heuristic.png"
+                     alt="Heuristic Evaluation Project">
+                <div class="mini-div">
+                    <h2 class="mini-title" aria-label="Project #2 Title">
+                        Website Heuristic Evaluation
+                    </h2>
+                    <ul class="mini-text" aria-label="Project #2 Summary">
+                        <li>Project done for CS 330 (Human Computer Interaction)</li>
+                        <li>Utilized Nielsen's design heuristics to evaluate the usability of local Chicago bike rental site</li>
+                        <li>Documented all usability problems, rating them based on severity and providing suggestions/solutions</li>
+                        <li><a href="https://docs.google.com/document/d/1iwFGdi5MHXSWpnCVMeNpmsXzp6yWSBIv-jwLX7_2knU/edit?usp=sharing">Google Doc Link</a></li>
+                    </ul>
+                    <img class="heuristic-icon-pic" 
+                     src="images/heuristic-icons.png"
+                     alt="Nielsen Design Heuristics">
+                </div>
+            </div>
+            <br><br><br><br><br>
+        </main>
+    </body>
 </html>
