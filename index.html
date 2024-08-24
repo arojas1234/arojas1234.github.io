@@ -1,76 +1,87 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <title>Home Page</title>
-        <link rel="stylesheet" href="styles.css">
-        <meta charset="utf-8">
-    </head>
-    <body>
-        <nav role=navigation>
-            <ul>
-                <li tabindex=1><a href="index.html">Home</a></li>
-                <li tabindex=2><a href="about-me.html">About Me</a></li>
-                <li tabindex=3><a href="resume.html">Resume</a></li>
-                <li tabindex=4><a href="contact.html">Contact Info</a></li>
-            </ul>
-        </nav>
-        <main>
-            <h1 aria-label="Home Page">
-                Welcome!
-            </h1>
-            <div class="flex-landing">
-                <img src="images/me.jpeg"
-                     alt="Andres Rojas Picture">
-                <p class="landing-p" role="Welcome Statement">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-end" role="navigation">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="d-lg-flex justify-content-between w-100">
+                    <div class="d-lg-flex">
+                        <!-- Font Size Buttons -->
+                        <div class="d-flex align-items-center me-3">
+                            <button id="increase-font" class="btn btn-outline-light me-2">A+</button>
+                            <button id="decrease-font" class="btn btn-outline-light">A-</button>
+                        </div>
+                        <!-- Dark Mode Toggle -->
+                        <div class="d-flex align-items-center">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="darkModeToggle">
+                                <label class="form-check-label text-light ms-2" for="darkModeToggle">Dark Mode</label>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about-me.html">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="experience.html">Previous Experiences</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Info & Resume</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="container mt-5" id="main-content">
+        <h1 class="text-center title-text" aria-label="Home Page">
+            Welcome!
+        </h1>
+        <br>
+        <div class="row align-items-center mb-5">
+            <div class="col-md-6">
+                <p class="landing-p intro-text" role="Welcome Statement">
                     <br>
-                    Hey there! My name is Andres Rojas, a current junior at Northwestern University! I am a computer
-                    science major from Miami, FL with a passion for tech and video games!
-                    <br><br><br><br>
-                    Feel free to look around my page, you can check out some of my projects right below!
-                </p>  
+                    Hey there! My name is Andres Rojas, currently a BA/MS student at Northwestern University
+                    studying computer science.
+                    <br><br>
+                    Feel free to look around my page and learn more me and my experience as a CS student and
+                    software engineer. 
+                </p>
             </div>
+            <div class="col-md-6 text-center">
+                <img src="images/me.jpeg" alt="Andres Rojas Picture" class="img-fluid rounded-pill me-pic">
+            </div>
+        </div>
+        <div class="text-center contact-logos">
+            <a href="mailto:andresrojas2024@u.northwestern.edu"><img src="images/email-icon.png" class="logo-pics mx-2"
+                    alt="Email"></a>
+            <a href="https://www.linkedin.com/in/andres-s-rojas/"><img src="images/linkedin.png" class="logo-pics mx-2"
+                    alt="LinkedIn"></a>
+            <a href="https://github.com/arojas1234"><img src="images/github-logo.png" class="logo-pics mx-2"
+                    alt="Github"></a>
+        </div>
+        <br><br>
+    </main>
+    <script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 
-            <div class="flex-proj">
-                <div class="mini-div">
-                    <h2 class="mini-title" aria-label="Project #1 Title">
-                        iPod Music Player
-                    </h2>
-                    <ul class="mini-text" aria-label="Project #1 Summary">
-                        <li>Project done for CS 330 (Human Computer Interaction)</li>
-                        <li>Utilized HTML, CSS, and Javascript to recreate an iPod music player</li>
-                        <li>Can enter albums and select songs to play</li>
-                        <li>Work in progress!</li>
-                        <li><a href="https://github.com/arojas1234/ipod-music-player">Github Repo</a></li>
-                    </ul>
-                    <img class="html-css-js-pic" 
-                     src="images/html-css-js.png"
-                     alt="HTML/CSS/Javascript Icons">
-                </div>
-                <img class="ipod-pic" 
-                     src="images/music-player.png"
-                     alt="Music Player Project">
-            </div>
-
-            <div class="flex-proj">
-                <img class="heuristic-pic" 
-                     src="images/heuristic.png"
-                     alt="Heuristic Evaluation Project">
-                <div class="mini-div">
-                    <h2 class="mini-title" aria-label="Project #2 Title">
-                        Website Heuristic Evaluation
-                    </h2>
-                    <ul class="mini-text" aria-label="Project #2 Summary">
-                        <li>Project done for CS 330 (Human Computer Interaction)</li>
-                        <li>Utilized Nielsen's design heuristics to evaluate the usability of local Chicago bike rental site</li>
-                        <li>Documented all usability problems, rating them based on severity and providing suggestions/solutions</li>
-                        <li><a href="https://docs.google.com/document/d/1iwFGdi5MHXSWpnCVMeNpmsXzp6yWSBIv-jwLX7_2knU/edit?usp=sharing">Google Doc Link</a></li>
-                    </ul>
-                    <img class="heuristic-icon-pic" 
-                     src="images/heuristic-icons.png"
-                     alt="Nielsen Design Heuristics">
-                </div>
-            </div>
-            <br><br><br><br><br>
-        </main>
-    </body>
 </html>

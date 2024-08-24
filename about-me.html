@@ -1,45 +1,120 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <title>About Me</title>
-        <link rel="stylesheet" href="styles.css">
-        <meta charset="utf-8">
-    </head>
-    <body>
-        <nav role=navigation>
-            <ul>
-                <li tabindex=1><a href="index.html">Home</a></li>
-                <li tabindex=2><a href="about-me.html">About Me</a></li>
-                <li tabindex=3><a href="resume.html">Resume</a></li>
-                <li tabindex=4><a href="contact.html">Contact Info</a></li>
-            </ul>
-        </nav>
-        </nav>
-        <main>
-            <h1 aria-label="Bio Page"> 
-                About Me
-            </h1>
-            <div class="about-flex">
-                <ul class="about-text" aria-label="About Me Summary">
+
+<head>
+    <meta charset="UTF-8">
+    <title>About Me</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.cdnfonts.com/css/campton" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-end" role="navigation">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="d-lg-flex justify-content-between w-100">
+                    <div class="d-lg-flex">
+                        <!-- Font Size Buttons -->
+                        <div class="d-flex align-items-center me-3">
+                            <button id="increase-font" class="btn btn-outline-light me-2">A+</button>
+                            <button id="decrease-font" class="btn btn-outline-light">A-</button>
+                        </div>
+                        <!-- Dark Mode Toggle -->
+                        <div class="d-flex align-items-center">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="darkModeToggle">
+                                <label class="form-check-label text-light ms-2" for="darkModeToggle">Dark Mode</label>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="about-me.html">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="experience.html">Previous Experiences</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Info & Resume</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <main class="container mt-5" id="main-content">
+        <h1 class="text-center" aria-label="Bio Page">
+            About Me
+        </h1>
+        <div class="row justify-content-center align-items-center mb-5">
+            <div class="col-md-6">
+                <ul class="about-text list-diamond" aria-label="About Me Summary">
                     <li>I was born in Quito, the capital of Ecuador.
-                    However, I have lived most of my life in Miami, FL. </li>
-                    <li> My hobbies include playing video games, watching anime,. and fostering kittens. </li>
-                    <li> I am the external president of the NU Esports Club, as well as the financial chair
+                        However, I have lived most of my life in Miami, FL. </li>
+                    <li> In my time on campus, I was the external president of the NU Esports Club, as well as the financial chair
                         for the NU SHPE chapter. </li>
-                    <li>I have a dog named Lucky and a cat named Chloe, here are some cute pics!</li>  
+                    <li> My hobbies include playing video games, watching anime, and fostering kittens. I 
+                        am also a big music fun, please enjoy some cool music down below! </li>
                 </ul>
-                <img class="lightning-pic" 
-                    src="images/me-lightning.jpeg"
-                    alt="Andres with Lightning McQueen Car">
             </div>
-            <div class="about-float">
-                <img class="chloe-pic" 
-                    src="images/chloe.jpeg"
-                    alt="My cat Chloe!">
-                <img class="lucky-pic" 
-                    src="images/lucky.jpeg"
-                    alt="My dog Lucky!">
+            <div class="col-md-6 text-center">
+                <div id="carouselExampleIndicators" class="carousel slide mx-auto" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/me-lightning.jpeg" class="d-block w-100 carousel-image"
+                                alt="Andres with Lightning McQueen Car">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/ecuador.png" class="d-block w-100 carousel-image" alt="Ecuador Flag">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/osu-logo.png" class="d-block w-100 carousel-image" alt="Osu Logo">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/esports.png" class="d-block w-100 carousel-image" alt="NU Esports Logo">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             </div>
-        </main>
-    </body>
+        </div>
+        <script src="sketch.js"></script>
+    </main>
+    <script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>

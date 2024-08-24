@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Previous Experience</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-end" role="navigation">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="d-lg-flex justify-content-between w-100">
+                    <div class="d-lg-flex">
+                        <!-- Font Size Buttons -->
+                        <div class="d-flex align-items-center me-3">
+                            <button id="increase-font" class="btn btn-outline-light me-2">A+</button>
+                            <button id="decrease-font" class="btn btn-outline-light">A-</button>
+                        </div>
+                        <!-- Dark Mode Toggle -->
+                        <div class="d-flex align-items-center">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="darkModeToggle">
+                                <label class="form-check-label text-light ms-2" for="darkModeToggle">Dark Mode</label>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about-me.html">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="experience.html">Previous Experiences</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Info & Resume</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="container mt-5" id="main-content">
+        <h1 class="text-center title-text" aria-label="Previous Experience">
+            Previous Experience and Projects
+        </h1>
+        <br><br>
+        <div class="row mb-5">
+            <div class="col-md-6">
+                <h2 class="mini-title" aria-label="Experience #1 Title">
+                    SWE Intern @ Adobe
+                </h2>
+                <ul class="mini-text" aria-label="Experience #1 Summary">
+                    <li>Working at Adobe's San Jose HQ under the Adobe Experience Manager (AEM) org</li>
+                    <li>Part of the Experience Success team, which works on AEM's most cutting edge projects and updates
+                    </li>
+                    <li>Tasked with creating a heatmap for AEM powered websites, which will help visualize the most
+                        active areas of a webpage using AEM's analytics (i.e. number of clicks, visits, areas viewed,
+                        etc.)</li>
+                    <li>Focused on front-end technologies such as JavaScript, and HTML/CSS</li>
+                </ul>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="images/adobe-logo.png" alt="Adobe Logo" class="img-fluid rounded">
+            </div>
+        </div>
+        <br>
+        <div class="row mb-5">
+            <div class="col-md-6 text-center">
+                <img src="images/lockheed-logo.png" alt="Lockheed Martin Logo" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6">
+                <h2 class="mini-title" aria-label="Experience #2 Title">
+                    SWE Intern @Lockheed Martin
+                </h2>
+                <ul class="mini-text" aria-label="Experience #2 Summary">
+                    <li>Worked in Orlando, FL MFC facility under a ADWS HWIL Research Team</li>
+                    <li>Developed multi-functional GUI in Python for the testing/calibration of a new R&D project.</li>
+                    <li>Designed detailed wireframe and led full-stack development of the interface, working in Agile sprints with team members.</li>
+                    <li>Reduced time to perform tests drastically, from 45-60 seconds of manual alterations to mere seconds with the digital program.</li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <div class="row mb-5">
+            <div class="col-md-6">
+                <h2 class="mini-title" aria-label="Project #1 Title">
+                    Dino Jump: Interactive Web Game
+                </h2>
+                <ul class="mini-text" aria-label="Project #1 Summary">
+                    <li>Expanded upon Google’s famous “Dinosaur Game” seen on their Chrome browser, 
+                        added in many more interactive obstacles, as well as a two-player mode in order to increase playability among friends. </li>
+                    <li>Implemented these changes by coding in C++, engineering my own interface with audio and sprites, as well as new controls. </li>
+                </ul>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="images/dino.jpg" alt="Dino Project" class="img-fluid rounded">
+            </div>
+        </div>
+    </main>
+    <script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

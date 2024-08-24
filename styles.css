@@ -1,189 +1,86 @@
-main{
-    margin-top: 100px; 
+.logo-pics {
+    max-width: 100px;
+    max-height: 100px;
 }
 
-html{
-    max-width: 100%;
-    overflow-x: hidden;
+.me-pic {
+    max-width: 65%;
 }
 
-nav{
-    background-color: lightblue;
-    position: fixed;
-    top: 0px;
-    right: 0px;
-    left: 0px;
-    text-align: right;
-    box-shadow: 0px 4px 4px blue;
-    font-size: 20px;
+.title-text {
+    font-size: 2.5rem;
 }
 
-nav li{
-    display: inline-block;
-    font-family: sans-serif;
-    font-weight: bold;
-    margin: 5px;
-    user-select: none;
-
-}
-nav ul{
-    list-style: none;
-    margin-right: 10px;
-}
-
-nav a{
-    text-decoration: none;
-    color: inherit;
-}
-
-nav li:hover{
-    text-decoration: underline;
-}
-
-.landing-p{
-    font-size: 30px;
-    text-align: center;
-}
-
-.half{
-    width: 50%;
-}
-
-.about-img{
-    border-radius:50% ;
-}
-.flex-landing {
-    display: flex;
-    margin-left: 50px;
-    margin-right: 50px;
-    gap: 50px;
-    padding: 0px 0px 25px 0px;
-}
-
-h1 {
-    font-size: 60px;
-    text-align: center;
-    margin-bottom: 10px;
-    border-width: 2px;
-}
-
-.flex-proj{
-    display: grid;
-    grid-auto-flow: column;
-    padding: 25px 0px 0px 0px;
-    margin-bottom: 0px;
-    border-top: 5px solid;
-    border-color: lightblue;
-    gap: 50px;
-    
-}
-
-.mini-div{
-    display: inline;
-}
-
-.ipod-pic{
-    padding-top: 2%;
-    width: 65%;
-    height: 85%;
-    margin-right: 20%;
-}
-.mini-title{
-    font-size: 45px;
-    text-align: center;
-    margin: 0px 0px 0px 0px;
-}
-
-.heuristic-pic{
-    width: 95%;
-    height: 95%;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-.mini-text{
-    padding-left: 100px;
-    font-size: 29px;
-}
-
-.html-css-js-pic{
-    padding-left: 350px;
-    width: 30%;
-    height: 30%
-}
-.heuristic-icon-pic{
-    width: 45%;
-    height: 40%;
-    padding-left: 250px;
-}
-
-.iframe{
-    margin-left: 23%;
-    aspect-ratio: 1.4142 / 1;
-    width: 55%;
-    height: auto;
-}
-
-.resume-link{
-    text-align: center;
-}
-
-.about-flex{
-    display: flex;
-}
-
-.about-float{
-    float: left;
-}
-
+.intro-text, 
 .about-text{
-    padding-left: 100px;
-    font-size: 29px;
+    font-size: 1.5rem;
 }
 
-.lightning-pic{
-    width: 40%;
-    height: 35%;
+.navbar-nav{
+    font-size: 1.3rem;
+}
 
-    border-radius: 50%;
+.list-diamond {
+    list-style: none; /* Remove the default list styling */
+    padding-left: 0; /* Remove default padding */
+}
+
+.list-diamond li {
+    position: relative;
+    padding-left: 1.5em; /* Adjust space based on the em unit for scaling */
+    margin-bottom: 0.5em; /* Space between list items, also scalable */
+}
+
+.list-diamond li::before {
+    content: "\25C6"; /* Unicode for diamond shape */
+    color: black; /* Blue color for the diamond */
+    font-size: 1em; /* Set font size relative to the parent font size */
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black; /* Default color */
+}
+
+.dark-mode {
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Light text */
+}
+.contact-logos{
+    background-color: transparent;
+    width: 400px;
+    margin: 0 auto; /* Center the div horizontally */
+}
+
+.dark-mode .carousel-control-prev-icon{
+    background-color: transparent; /* Default color */
+}
+.dark-mode .carousel-control-next-icon {
+    background-color: transparent; /* Default color */
+}
+.dark-mode .contact-logos{
+    background-color: rgba(33,37,41,255);
+}
+.carousel-image {
+    max-height: 400px; /* Set a smaller maximum height for the images */
+    width: auto; /* Maintain the original aspect ratio of the images */
+    margin: 0 auto; /* Center the images horizontally */
+    object-fit: contain; /* Ensure images are fully visible, even if it means leaving space */
 }
 
 
-.chloe-pic{
-    width: 25%;
-    height: 25%;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 5%;
-}
-
-.lucky-pic{
-    width: 35%;
-    height: 25%;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 5%;
-    margin-bottom: 5%;
-}
-
-.contact-text{
-    padding-left: 100px;
-    font-size: 32px;
-    padding-right: 50px;
-}
-
-.contact-pics{
-    width: 15%;
-    padding-right: 2%;
-
-}
-
-.contact-flex{
+.resume-container {
     display: flex;
-    padding-top: 3%;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-
-  /*  border-style: solid;
-    border-width: 5px;
-    border-color: lightblue; */
+.resume-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
